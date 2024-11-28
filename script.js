@@ -9,7 +9,7 @@ document.getElementById('houseForm').addEventListener('submit', function(e) {
         alert('Please enter a valid price greater than 0.');
         return;
     }
-
+if(houseForm.empty){alert('Please fill the Form!');}
     // Phone number validation
     if (!/^\d{10}$/.test(phone)) {
         alert('Phone number must be 10 digits.');
